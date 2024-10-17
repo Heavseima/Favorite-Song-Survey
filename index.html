@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Favorite Song Survey</h1>
+        <p id="description">We’d love to hear about your favorite song and what it means to you. 
+            Please fill out the form below to share your thoughts! </p>
+    </header>
+
+    <main>
+        <form action="" method="post" id="survey-form">
+
+            <!-- Ask user for Name, Age, Email -->
+
+            <fieldset>
+                <label for="name" id="name-label"> Enter Your Name:
+                    <input type="text" name="name" id="name" required placeholder="Your name here">
+                </label>
+
+                <label for="number" id="number-label"> Age<span>(Optional)</span>:
+                    <input type="number" name="number" id="number" min="10" max="100" placeholder="Your age here">
+                </label>
+
+                <label for="email" id="email-label"> Enter Your Email:
+                    <input type="email" name="email" id="email" required placeholder="example@example.com">
+                </label>
+
+                <label for="song-name"> Your favorite Song's Name:
+                    <input type="text" name="song-name" id="song-name" required placeholder="Ex: Beautiful in White" class="extra-margin-bottom">
+                </label>
+            </fieldset>
+
+            <!-- Dropdown-Ask user for Song Genre -->
+
+            <fieldset>
+                <label for="dropdown">What Genre does this Song belong to?
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="select-one">(Select one)</option>
+                        <option value="pop">Pop</option>
+                        <option value="rock">Rock</option>
+                        <option value="hip-hop">Hip-Hop</option>
+                        <option value="classical">Classical</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- Radio-Ask if the song related to someone -->
+            
+            <fieldset>
+                <legend> Is this Song connected to Someone Special?</legend>
+                <label for="yes">
+                    <input type="radio" name="related" id="yes" checked value="yes" class="inline">  Yes
+                </label>
+
+                <label for="no"> 
+                    <input type="radio" name="related" id="no" value="no" class="inline"> No
+                </label>
+            </fieldset>
+
+            <!-- Checkbox-Feelings when listen to that song -->
+
+            <fieldset>
+                <legend>What Emotions do you feel when listening to this Song? (Select all that apply)</legend>
+                <label for="happy"><input type="checkbox" name="happy" id="happy" value="happy" class="inline"> Happy</label>
+                <label for="nostalgic"><input type="checkbox" name="nostalgic" id="nostalgic" value="nostalgic" class="inline"> Nostalgic</label>
+                <label for="relax"><input type="checkbox" name="relax" id="relax" value="relax" class="inline"> Relaxed</label>
+                <label for="energetic"><input type="checkbox" name="energetic" id="energetic" value="energetic" class="inline"> Energetic</label>
+                <label for="sad"><input type="checkbox" name="sad" id="sad" value="sad" class="inline">Sad</label>
+            </fieldset>
+
+            <!-- Checkbox-Ask user for which aspect of the song they prefer -->
+
+            <fieldset>
+                <legend required>What aspects do you like about the song? (Select all that apply)</legend>
+                <label for="lyrics"><input type="checkbox" name="lyric" id="lyric" value="lyric" class="inline"> Lyrics</label>
+                <label for="lyrics"><input type="checkbox" name="melody" id="melody" value="melody" class="inline"> Melody</label>
+                <label for="lyrics"><input type="checkbox" name="artist" id="artist" value="artist" class="inline"> Artist</label>
+                <label for="lyrics"><input type="checkbox" name="meaning" id="meaning" value="meaning" class="inline"> Meaning</label>
+                <label for="lyrics"><input type="checkbox" name="instrumental" id="instrumental" value="instrumental" class="inline"> Instrumental</label>
+            </fieldset>
+
+            <!-- Textarea-Ask user why is it their favorite song -->
+
+            <fieldset>
+                <label for="why">Why is this song your favorite? Share any special memories or reasons.
+                    <textarea name="why" id="why" cols="50" rows="5" placeholder="Type your thoughts here..." required></textarea>
+                </label>
+            </fieldset>
+
+            <!-- submit -->
+            <input type="submit" value="Submit" id="submit"> 
+
+        </form>
+    </main>
+</body>
+</html>

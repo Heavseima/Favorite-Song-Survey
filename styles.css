@@ -1,0 +1,80 @@
+:root {
+    --d1 : #FAF0E6;
+    --d2 : #B9B4C7;
+    --d3 : #0c4164;
+    --d4 : #0c5568;
+}
+
+body {
+    width: 850px;
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    background-color: var(--d4);
+    color: #EEEEEE;
+}
+
+.extra-padding {
+    margin-left: 15px;
+}
+
+#survey-form {
+    background-color: var(--d3);
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 500px;
+    min-width: 50;
+}
+
+label {
+    display: block;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+header {
+    text-align: center;
+    color: #EEEEEE;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+input, textarea, select {
+    display: inline-block;
+    width: 97.5%;
+    min-height: 2rem;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    background-color: var(--d1);
+    border: 0.2rem solid var(--d2);
+    margin: 10px auto;
+}
+
+input[type="submit"] {
+    width: 95.5%;
+    margin-left: 17px;
+}
+
+select {
+    width: 100%;
+
+}
+
+fieldset {
+    border: 0;
+    min-height: 2.5rem;
+    border-bottom: 3px solid var(--d1);
+    margin-bottom: 15px;
+}
+
+.extra-margin-bottom {
+    margin-bottom: 20px;
+}
+
